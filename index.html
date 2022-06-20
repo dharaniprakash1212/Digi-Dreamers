@@ -1,47 +1,156 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>IRCTC ticket booking</title>
+        
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/livs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12UK9gS9baDl411NQApFmC26EwA0H8WgZl5MYYxFfc+Ncpb1dkGj7Sk" crossorigin="anonymous">
+        <style>
+            html,body{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                overflow-x: hidden;
+                position:relative;
+                background-color: white;
+            }
+            #nav-fixed{
+                position: relative;
+                width: 100%;                                                                                                                   width: 100px;
+                border-bottom:1px solid#f1f1f1;
+                padding:10px 0;
+                background-color: white;
+                color:black;
+                font-weight:bold;
+                text-transform:uppercase;
+            }
+            ul{
+                list-style-type:none;
+                margin:15px;
+                padding:0;
+            }
+            li{
+                display:inline;
+                margin:15px 10px;
+                padding-bottom: 5px;
+                transition:color 0.3s;
+            }
+            li:hover{
+                border-bottom: 3px solid blue;
+                color:blue;
+                cursor:pointer;
+            }
+            .account-img{
+                border-radius: 50%;
+                width:50px;
+                height:50px;
+                margin-top:3px;
+                box-shadow:0px 0px 10px #ccc;
+
+            }
+        </style>
+
+    </head>
+    <body>
+        <nav id="nav-fixed">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <table width="1420px" height="20px">
+                    <tr><td><image src="logo1.jpg" width="100px" height="100px"></td>
+                        <td > <a href="login.html">login </a></td>
+                        <td><a href="https://www.irctc.co.in/nget/profile/user-registration"><register</a></td>
+                        <td>agent login</td><td><a href="contact.html">contact us</a></td><td>ask disha</td><td>alerts</td>
+                        <td>date</td    >
+                        <td><image src="logo2.jpg" width="100px" class="account.img"></td></tr>
+                            </table>
+                            <table>
+                                <tr><td><select name="dropdown"> <option value="0">IRCTC-Exclusive</option></option>option value
+                                    <option value="2">IRCTC-e wallet</option></option>value="3">IRCTC-i mudra</option><option value1></option>
+                                </select></td>
+                                <td><select name="dropdown"><option value="a">TRAINS</option></option value=
+                                    "b">Book Ticket</option></select></td>
+                                <td><select name="dropdown"><option value="a">TRAINS</option></option><option value="b">Book Ticket</option>
+                                    <option value="c">Foreign Tourist Booking</option><option value="d" >connecting journery booking</option><option value="
+                                    e" > IRCTC TRAINS</option>
+                                    <option value="f">Cancel Ticket</option></option><option value="g" >PNR Enquiry</option>
+                                    <option value="h">Train Schedule</option></option><option value="i">Track Your Train</option><option value="j">FTR Coach/Train Booking</option>
+                                </select></td>
+                                <td><select name="dropdown"> <option value="A">HOLIDAYS</option</option><option value="B" >Special trains</option>
+                                    <option value="C">Packages</option><option value="D" >Stays</option></select></td>
+                                <td><select name="dropdown" > option value="A">LOYALITY</option></option><option value="B" >About IRCTC SBI CREDIT CARD</option>
+                                <td><select name="dropdown" > option value="A">MEALS</option></option><option value="B" >Food order</option>
+                                       <option value="C">Book order</option><option value="D">cooked food</option><option></select></td>
+                                <td><select name="dropdown" > option value="A">PROMOTIONS</option></option><option value="B" >Advertise with us</option>
+                                       <option value="C">IRCTC Tourism App</option><option value="D">IRCTC Air App</option><option></select></td>
+                                <td><select name="dropdown" > option value="A">MORE</option></option><option value="B" >Chatbot as a servival</option>
+                                       <option value="C">Link Your Adhaar</option><option value="D">AT stations</option>option></select></td>
+                                      
+                                </select></td>
+                             </table>
+                         </div>
+            </div>
+
+        </nav>
         <title>IRCTC next generation eTicketing System</title>
         <style>
             .b{
                 border: 1px solid black;
-                margin-top:100px;
-                margin-right: 100px;
-                margin-left: 100px;
+                margin-top:50px;
+                margin-right: 600px;
+                margin-left: 50px;
+                margin-bottom: 400px;
                 color:darkblue;
                 padding:20px;
-                background-color: white;
+                background-color:white;
             }
             .r{
-                border:1px solid cornflowerblue;
-                margin:40px;
-                margin-left: 10px;
-                margin-right: 800px;
-                padding:20px;
+                 border:1px solid red;
+                margin:20px;
+                margin-left:50px;
+                margin-right: 600px;
+                padding:10px;
+                background-color:white;
+            }
+             
+            
+            .bg{
+                background-image:url('train.jpg');
+                margin-top:30px;
+                margin-top: 50px;
+                height:900px;
+                background-repeat: no-repeat,repeat;
+                background-size: cover;
+                display:inline-flex;
             }
         </style>
     </head>
     <body>
+        <div class="bg" >&nbsp;
+
         <div class="b">
-            <table><tr><td style="margin-left: 100px;">
+            <table><tr><td style="margin-left: 8px;margin-bottom: 8px;margin-right: 8px;">
             <img src="azadi.jpg" height="100px;" width="150px;">
+            
+
         </div>></td>
-         <td><center><h1 style="margin-left: 10px">BOOK TICKET</h1></center></td></tr></table>
+         <td><center><h1 style="padding-left: 200px">BOOK TICKET</h1></center></td></tr></table>
          <div class="container">
             <div class="row">
                 <div class="col">
-                    <input style="width:200px;" type="text" placeholder="From" class="form-control">
+                    <input style="width:200px;" type="text" placeholder="From" class="form-control"><br> </br>
                     <input style="width:200px;" type="text" placeholder="To" class="form-control">
-                    <select style="width:200px;" class="form-select">
+                    <select style="width:200px; text-align:right;" class="form-select">
                     <option>GENERAL</option>
                     <option>LADIES</option>
                     <option>PERSON WITH DISABILITY</option>
                     <option>TATKAL</option>
                     <option>PREMIUM TATKAL</option>
                 </select>
-                </div><br>
+                </div>
+                <br>
                 <div class="col">
                     <input type="date"><br></br>
                     <div style="width:50px;">
@@ -64,11 +173,10 @@
                     <option>Second Sitting(2S)</option>
                  </select>
                 </div>
-                </div>
-
-                </div>
             </div>
-         </div><br>
+         </div>
+     </div>
+ <br>
          <div class="container">
             <div class="row">
                 <div class="col">
@@ -76,33 +184,35 @@
                         <input class="form-check-input" type="checkbox" value="" id="123">
                         <label class="form-check-label" for="flexCheckDefault">Person with disability concession</label>
                     </div>
-                    </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="123">
                         <label class="form-check-label" for="flexCheckDefault">train with available breath</label>
                     </div>
-                    </div>
-                    <div class="col">
+                </div>
+                <div class="col">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="123">
                         <label class="form-check-label" for="flexCheckDefault">Flexible date</label>
                     </div>
-                    <div>
-                        <div class="form-check">
+                    <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="123">
                             <label class="form-check-label" for="flexChrckDefault">railway pass concession</label>
                         </div>
                     </div>
                  </div>
-         </div>
-         <div><br><input style="width:150px;"  class="btn btn-warning" type="submit" value="search">
+        </div>
+            <div><br><input type="button" value="search" class="btn btn-primary" >
         </div></div><br><br><br>
         <div class="r">
-            <label style="color:red;">New</label> IRCTC launches ticket booking on ASK DISHA 2.0 Click here
+            <label style="color:red;">New</label> IRCTC launches ticket booking on ASK DISHA 2.0 <a href="https://contents.irctc.co.in/en/LINEN.html">Click here</a>
+            <br>
 
-            Indian Railways have started provisioning of Linen in trains. Click here for the list of trains where Linen Services have been restarted as on <date class=""></date>
+            Indian Railways have started provisioning of Linen in trains.Above is the link for list of trains where Linen Services have been restarted as on <date class=""></date>
         </div>
-        <script src="js/bootstrap.min.js"></script>
+        <H1 style="color:red"><b>HOLIDAYS</b></H1>
+        
+    <script src="js/bootstrap.min.js"></script>      
+    
     </body>
 
 </html>
